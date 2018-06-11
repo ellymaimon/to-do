@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teux Deux List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>To Do List:</h1>
+    <div class="form-group">
+      <form id="entryForm">
+        <label for="project">Give your new project a name:</label>
+        <input type="text" class="form-control" id="project" required>
+        <label for="dueDate">Due date:</label>
+        <input type="date" class="form-control" id="dueDate" required>
+        <label for="description">Add a brief description:</label>
+        <input type="text" class="form-control" id="description" required>
+        <button type="submit" class="btn btn-info" id="add-project">Add Project</button>
+        </form>
+      </div>
+      <div class="form-group">
+        <form id="taskForm">
+          <div class="to-do">
+            <label for="task">Enter a task here:</label>
+            <input type="text" class="form-control" id="task" required>
+            <button type="submit" class="btn btn-info" id="add-task">Add Task</button>
+            <button type="button" class="btn btn-info" id="finish">Finish</button>
+          </div>
+        </form>
+      </div>
+
+    <div class="project-output">
+      <div class="row">
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
