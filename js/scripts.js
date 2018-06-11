@@ -7,10 +7,10 @@ function Project(name, idName, dueDate, description) {
 
 }
 
-$("#button" + this.idName).click(function() {
-  $("#div" + this.idName).hide();
-  this.finish();
-});
+// $("#button" + this.idName).click(function() {
+//   $("#div" + this.idName).hide();
+//   this.finish();
+// });
 
 Project.prototype.addProject = function() {
   $(".to-do").hide().fadeIn(1000);
@@ -22,7 +22,12 @@ Project.prototype.addProject = function() {
   $("#dueDate").attr("disabled", true);
   $("#description").attr("disabled", true);
   $("#add-project").attr("disabled", true);
+  var whatever = this.idName;
+  $("#button" + this.idName).click(function() {
+    $("#div" + whatever).hide();
+  });
 }
+
 
 Project.prototype.addTask = function() {
   var taskName = $("#task").val();
